@@ -1,0 +1,12 @@
+.footer {
+  padding: 2rem 0;
+  border-top: 2px solid #EEEEEE;
+}
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+/*# sourceMappingURL=footer.module.css.map */

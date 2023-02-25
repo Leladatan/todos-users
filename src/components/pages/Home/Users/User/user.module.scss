@@ -1,0 +1,42 @@
+@import "@/styles/variables.scss";
+
+.user {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 2px solid $text;
+  border-radius: 10px;
+  gap: 1rem;
+  transition: all .3s ease-in-out;
+  animation: appearance .3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 20px 10px $title-hover;
+  }
+
+  &__title {
+    font-size: 20px;
+    color: $title;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 20px;
+    color: $text;
+    align-items: center;
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

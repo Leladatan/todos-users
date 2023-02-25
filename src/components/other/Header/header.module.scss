@@ -1,0 +1,13 @@
+@import "@/styles/variables.scss";
+
+.header {
+  padding: 2rem 0;
+  border-bottom: 2px solid #EEEEEE;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+}

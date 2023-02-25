@@ -1,0 +1,13 @@
+@import "@/styles/variables.scss";
+
+.logo {
+  &__link {
+    transition: all .3s ease-in-out;
+    font-size: 30px;
+    color: $title;
+
+    &:hover {
+      color: $title-hover;
+    }
+  }
+}

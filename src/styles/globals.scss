@@ -1,0 +1,34 @@
+@import "@/styles/variables.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: $title;
+  text-decoration: none;
+}
+
+#__next{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: $background-first;
+  background: linear-gradient(180deg, $background-first 15%, $background-second 100%);
+}
+
+main {
+  margin: 5rem 0;
+}

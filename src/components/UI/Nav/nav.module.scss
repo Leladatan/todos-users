@@ -1,0 +1,29 @@
+@import "@/styles/variables.scss";
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+
+.list {
+
+  &__link {
+    transition: all .3s ease-in-out;
+    font-size: 20px;
+    color: $title-hover;
+
+    &:hover {
+      color: $title;
+    }
+
+    &_active {
+      transition: all .3s ease-in-out;
+      font-size: 20px;
+      color: $title;
+    }
+  }
+}

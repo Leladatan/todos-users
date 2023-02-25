@@ -1,0 +1,14 @@
+@import "@/styles/variables.scss";
+
+.main {
+  &__title {
+    font-size: 30px;
+    color: $title;
+    text-align: center;
+  }
+  &__text {
+    font-size: 20px;
+    color: $text;
+    text-align: center;
+  }
+}
