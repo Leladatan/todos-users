@@ -10,7 +10,7 @@
   border: 2px solid $text;
   border-radius: 10px;
   transition: all .3s ease-in-out;
-  animation: appearance .3s ease-in-out;
+  animation: appearanceY .3s ease-in-out;
 
   &:hover {
     box-shadow: 0 0 20px 10px $title-hover;
@@ -24,5 +24,27 @@
   &__text {
     font-size: 20px;
     color: $text;
+  }
+}
+
+@keyframes appearanceY {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearanceYMobile {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

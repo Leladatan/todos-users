@@ -11,7 +11,7 @@
   border-radius: 10px;
   gap: 1rem;
   transition: all .3s ease-in-out;
-  animation: appearance .3s ease-in-out;
+  animation: appearanceX .3s ease-in-out;
 
   &:hover {
     box-shadow: 0 0 20px 10px $title-hover;
@@ -30,10 +30,21 @@
   }
 }
 
-@keyframes appearance {
+@keyframes appearanceX {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearanceX {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
   }
   100% {
     opacity: 1;
