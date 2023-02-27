@@ -1,5 +1,6 @@
 import React, {FC} from 'react';
 import styles from './todos.module.scss';
+import TodosItem from "@/components/pages/Todos/TodosItem/TodosItem";
 
 const Todos: FC = () => {
     return (
@@ -9,6 +10,8 @@ const Todos: FC = () => {
                     Список заметок
                 </h1>
             </div>
+
+            <TodosItem/>
         </>
     );
 };

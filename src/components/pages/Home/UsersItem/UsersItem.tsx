@@ -1,22 +1,22 @@
 "use client"
 import React, {FC, useEffect, useState} from 'react';
-import styles from "./users.module.scss";
+import styles from "./usersItems.module.scss";
 import axios from "axios";
 import Loader from "@/components/other/Loader/Loader";
-import User, {UsersData} from "@/components/pages/Home/Users/User/User";
+import User, {UsersData} from "@/components/pages/Home/UsersItem/User/User";
 
 
-const Users: FC = ({}) => {
-    const [data, setData] = useState<UsersData[]>([]);
+const UsersItem: FC = ({}) => {
+    const [dataUsers, setDataUsers] = useState<UsersData[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
     useEffect(() => {
-        const Fetch = async () => {
+        const FetchUsers = async () => {
             try {
                 await axios
                     .get("https://jsonplaceholder.typicode.com/users")
                     .then(res => {
-                        setData(res.data);
+                        setDataUsers(res.data);
                     });
             } catch (e) {
                 console.log(e);
@@ -24,7 +24,7 @@ const Users: FC = ({}) => {
                 setIsLoading(false);
             }
         };
-        Fetch();
+        FetchUsers();
     }, []);
 
     return (
@@ -33,7 +33,7 @@ const Users: FC = ({}) => {
                 ?
                 <Loader/>
                 :
-                data.map(item => (
+                dataUsers.map(item => (
                     <User id={item.id} name={item.name} username={item.username} email={item.email}
                           address={item.address}
                           phone={item.phone} website={item.website} company={item.company} key={item.id}/>
@@ -43,4 +43,4 @@ const Users: FC = ({}) => {
     );
 };
 
-export default Users;
+export default UsersItem;

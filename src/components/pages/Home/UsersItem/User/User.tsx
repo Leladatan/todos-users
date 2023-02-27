@@ -31,11 +31,7 @@ interface FetchAddressGeo {
     lng: string
 }
 
-const User: FC<UsersData> = ({
-                             id, company, email,
-                             name, address, phone,
-                             website, username
-                         }) => {
+const User: FC<UsersData> = ({email, name, address, phone, username}) => {
     return (
         <div className={styles.user}>
             <h2 className={styles.user__title}>{name}</h2>

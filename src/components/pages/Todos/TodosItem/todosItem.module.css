@@ -1,10 +1,10 @@
-.users__content {
+.todos__content {
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
 }
-.users__content_loader {
+.todos__content_loader {
   padding: 5rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
@@ -12,4 +12,4 @@
   justify-content: center;
 }
 
-/*# sourceMappingURL=users.module.css.map */
+/*# sourceMappingURL=todosItem.module.css.map */

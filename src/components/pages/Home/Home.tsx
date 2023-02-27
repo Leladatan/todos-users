@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import styles from "./home.module.scss";
-import Users from "@/components/pages/Home/Users/Users";
+import UsersItem from "@/components/pages/Home/UsersItem/UsersItem";
 
 const Home: FC = () => {
     return (
@@ -11,7 +11,7 @@ const Home: FC = () => {
                 </h1>
             </div>
 
-            <Users/>
+            <UsersItem/>
         </>
     );
 };
