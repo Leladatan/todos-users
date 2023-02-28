@@ -6,6 +6,10 @@ const Document: NextPage = () => {
         <Html lang="en">
             <Head>
                 <link rel="icon" href="/favicon.ico"/>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+                    rel="stylesheet"
+                />
             </Head>
             <body>
             <Main/>

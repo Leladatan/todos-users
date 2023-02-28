@@ -1,12 +1,11 @@
-"use client"
 import React, {FC, useEffect, useState} from 'react';
-import styles from "./usersItems.module.scss";
+import styles from "./users.module.scss";
 import axios from "axios";
 import Loader from "@/components/other/Loader/Loader";
-import User, {UsersData} from "@/components/pages/Home/UsersItem/User/User";
+import User, {UsersData} from "@/components/pages/Users/User/User";
 
 
-const UsersItem: FC = ({}) => {
+const Users: FC = ({}) => {
     const [dataUsers, setDataUsers] = useState<UsersData[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
@@ -43,4 +42,4 @@ const UsersItem: FC = ({}) => {
     );
 };
 
-export default UsersItem;
+export default Users;

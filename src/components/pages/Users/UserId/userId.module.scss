@@ -1,0 +1,75 @@
+@import "@/styles/variables.scss";
+
+.user__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &_loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.user {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 2px solid $text;
+  border-radius: 10px;
+  gap: 1rem;
+  transition: all .3s ease-in-out;
+  animation: appearanceX .3s ease-in-out;
+  max-width: 600px;
+
+  &:hover {
+    box-shadow: 0 0 20px 10px $title-hover;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: 20px;
+    color: $title;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 20px;
+    color: $text;
+    align-items: center;
+  }
+}
+
+@keyframes appearanceX {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearanceXMobile {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

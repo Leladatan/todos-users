@@ -15,6 +15,12 @@ const Nav: FC = ({}) => {
                 </li>
 
                 <li className={styles.list__item}>
+                    <Link href="/users" className={pathname === "/users" ? styles.list__link_active : styles.list__link}>
+                        Пользователи
+                    </Link>
+                </li>
+
+                <li className={styles.list__item}>
                     <Link href="/todos"
                           className={pathname === "/todos" ? styles.list__link_active : styles.list__link}>
                         Заметки

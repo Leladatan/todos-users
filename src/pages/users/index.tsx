@@ -1,19 +1,21 @@
+import React from 'react';
 import {NextPage} from "next";
 import Layout from "@/components/other/Layout/Layout";
-import Home from "@/components/pages/Home/Home";
+import Users from "@/components/pages/Users/Users";
 import Head from "next/head";
 
-const HomePage: NextPage = () => {
+const UsersPage: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Главная страница</title>
+                <title>Пользователи</title>
             </Head>
 
             <Layout>
-                <Home/>
+                <Users/>
             </Layout>
         </>
-    )
-}
-export default HomePage;
+    );
+};
+
+export default UsersPage;
