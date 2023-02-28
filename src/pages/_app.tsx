@@ -2,7 +2,7 @@ import '@/styles/globals.scss';
 import type {AppProps} from 'next/app';
 import {NextPage} from "next";
 import Head from 'next/head';
-import {Dancing_Script} from '@next/font/google';
+import {Dancing_Script} from 'next/font/google';
 const dancingScript = Dancing_Script({ subsets: ['latin'] });
 
 const App: NextPage<AppProps> = ({Component, pageProps}: AppProps) => {
