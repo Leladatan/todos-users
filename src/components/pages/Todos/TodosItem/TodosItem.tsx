@@ -8,6 +8,9 @@ const TodosItem: FC = () => {
     const [dataTodos, setDataTodos] = useState<TodosData[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
+    const [isButtonAdd, setIsButtonAdd] = useState<boolean>(false);
+    const [isButtonDelete, setIsButtonDelete] = useState<boolean>(false);
+
     useEffect(() => {
         const FetchTodos = async () => {
             try {

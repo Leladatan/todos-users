@@ -1,6 +1,9 @@
 @import "@/styles/variables.scss";
 
 .header {
+  position: sticky;
+  top: 0;
+  background-color: rgba($background-first, 0.9);
   padding: 2rem 0;
   border-bottom: 2px solid #EEEEEE;
 
